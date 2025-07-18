@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            text-align: center;
+            padding: 50px;
+        }
+        .result-box {
+            background: white;
+            padding: 30px;
+            width: 40%;
+            margin: auto;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .spam {
+            color: red;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .not-spam {
+            color: green;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: white;
+            background: #007bff;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        a:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="result-box">
+        <h2>🔍 Message Classification Result</h2>
+        <p class="{{ 'spam' if prediction == 'Spam' else 'not-spam' }}">
+            {{ prediction }}
+        </p>
+        <a href="/">🔄 Check Another Message</a>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+### **📌 What is LSTM (Long Short-Term Memory) Neural Network?**  
+LSTM (Long Short-Term Memory) is a special type of **Recurrent Neural Network (RNN)** designed to **remember long-term dependencies** in sequential data. It is widely used for **text classification, speech recognition, and time-series forecasting** because it effectively handles the problem of **vanishing gradients**, which affects traditional RNNs.
+
+---
+
+### **🛠 How LSTM Works?**
+LSTMs use **memory cells** and **gates** to selectively remember or forget information over time. The key components are:
+
+1️⃣ **Forget Gate (💭🚪)**  
+   - Decides **which past information to forget**.
+   - Uses a **sigmoid activation function** to output values between **0 (forget) and 1 (keep)**.
+
+2️⃣ **Input Gate (📥)**  
+   - Decides **which new information to store**.
+   - Uses a **sigmoid function** to determine important inputs.
+
+3️⃣ **Cell State (🧠 Memory Cell)**  
+   - Stores **long-term dependencies**.
+   - Updates with **relevant new information**.
+
+4️⃣ **Output Gate (📤)**  
+   - Decides **what part of the memory should be output**.
+   - Uses **sigmoid activation** to produce the final output.
+
+---
+
+### **🔍 How LSTM Works in Spam Detection?**
+1️⃣ **Text Preprocessing**: Tokenization, removing stopwords, converting text to numerical sequences.  
+2️⃣ **LSTM Network**: Processes the text sequence and learns patterns between spam and ham messages.  
+3️⃣ **Prediction**: The trained model classifies new messages as **Spam (1) or Not Spam (0)**.  
+
+---
+
+### **🛠 Advantages of LSTM in Spam Detection**
+✅ **Handles long text sequences efficiently**  
+✅ **Remembers important past words while ignoring irrelevant ones**  
+✅ **Works well for real-world spam messages**  
+
+---
+
+Would you like a **code walkthrough** of how LSTM is used in your project? 🚀
